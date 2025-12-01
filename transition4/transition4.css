@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    box-sizing: border-box; 
+    text-align: center; 
+    image-rendering: pixelated;
+    overflow: hidden;
+    background-color: #26de67
+}
+
+.bodycontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.background-container {
+    display: flex;
+    flex-direction: column;
+    width: 1086px;
+    height: 448px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border: 6px solid black;
+    background-color: white;
+}
+
+.background1 {
+    width: 1086px;
+    height: 224px;
+    background-image: url(house1.png);
+}
+
+.background2 {
+    width: 846px;
+    height: 224px;
+    background-image: url(house2.png);
+
+}
+
+
+
+canvas {
+width: 1086px;
+height: 448px;
+margin: auto;
+position: absolute;
+top: 28px;
+left: 91px;
+border: 6px solid black;
+}
+
+@font-face {                  
+font-family: 'AnalogueOS';
+src: url(https://humantooth.neocities.org/fonts/AnalogueOS-Regular.woff) format('woff');
+font-weight: normal;
+font-style: normal;
+} 
+
+.text {
+font-family: 'AnalogueOS';
+font-size: 72px;
+text-align: center;
+padding: 20px;
+}

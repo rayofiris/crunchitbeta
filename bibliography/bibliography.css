@@ -1,0 +1,437 @@
+body {
+    margin: 0;
+    box-sizing: border-box; 
+    image-rendering: pixelated;
+    background-color: white;
+}
+
+.sprite {
+width: 40px;
+height: 64px;
+background-image: url(../sprites/front2.png);
+background-size: 100%;
+}
+
+.frontwalk {
+width: 40px;
+height: 64px;
+background-image: url(../sprites/front2.png);
+background-size: 100%;
+animation: frontwalk 1.5s 0s infinite linear;
+}
+
+@keyframes frontwalk {
+0% {
+background-image: url(../sprites/front2.png);
+}
+33% {
+background-image: url(../sprites/front1.png);
+}
+66% {
+background-image: url(../sprites/front2.png);
+}
+100% {
+background-image: url(../sprites/front3.png);
+}
+
+}
+
+.backwalk {
+width: 40px;
+height: 64px;
+background-image: url(../sprites/back2.png);
+background-size: 100%;
+animation: backwalk 1.5s 0s infinite linear;
+}
+
+@keyframes backwalk {
+0% {
+background-image: url(../sprites/back2.png);
+}
+33% {
+background-image: url(../sprites/back1.png);
+}
+66% {
+background-image: url(../sprites/back2.png);
+}
+100% {
+background-image: url(../sprites/back3.png);
+}
+
+}
+
+.leftwalk {
+width: 40px;
+height: 64px;
+background-image: url(../sprites/left2.png);
+background-size: 100%;
+animation: leftwalk 1.5s 0s infinite linear;
+}
+
+@keyframes leftwalk {
+0% {
+background-image: url(../sprites/left2.png);
+}
+33% {
+background-image: url(../sprites/left1.png);
+}
+66% {
+background-image: url(../sprites/left2.png);
+}
+100% {
+background-image: url(../sprites/left3.png);
+}
+
+}
+
+.rightwalk {
+width: 40px;
+height: 64px;
+background-image: url(../sprites/right2.png);
+background-size: 100%;
+animation: rightwalk 1.5s 0s infinite linear;
+}
+
+@keyframes rightwalk {
+0% {
+background-image: url(../sprites/right2.png);
+}
+33% {
+background-image: url(../sprites/right1.png);
+}
+66% {
+background-image: url(../sprites/right2.png);
+}
+100% {
+background-image: url(../sprites/right3.png);
+}
+
+}
+
+canvas {
+width: 1200;
+height: 560;
+
+}
+
+.canvascontainer {
+width: 100vw; 
+height: 100vh;
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+position: absolute;
+top: 0;
+left: 0;
+}
+
+.bodycontainer {
+width: 100vw; 
+height: 100vh;
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+position: absolute;
+top: 0;
+left: 0;
+}
+
+
+.divcontainer {
+width: 1200px;
+height: 560px;
+background-color: #bababa;
+position: relative;
+
+}
+
+.redbutton {
+width: 50px;
+height: 50px;
+background-color: #da1c44;
+position: absolute;
+top: 50px;
+left: 50px;
+box-shadow: 3px 0px black inset;
+}
+
+.redsources {
+width: 240px; 
+height: 225px; 
+background-color: white;
+border: 3px solid black;
+position: absolute; 
+top: 50px;
+left: 116px; 
+visibility: hidden;
+padding: 10px;
+font-family: 'jgs7';
+font-size: 14px;
+text-align: justify;
+}
+
+.orangebutton {
+width: 50px;
+height: 50px;
+background-color: #f44200;
+position: absolute;
+top: 50px;
+left: 400px;
+box-shadow: 3px 0px black inset;
+}
+
+.orangesources {
+width: 240px; 
+height: 175px; 
+background-color: white;
+border: 3px solid black;
+position: absolute; 
+top: 50px;
+left: 466px; 
+visibility: hidden;
+padding: 10px;
+text-align: justify;
+font-family: 'jgs7';
+font-size: 14px;
+}
+
+.lightorangebutton {
+width: 50px;
+height: 50px;
+background-color: #fa9202;
+position: absolute;
+top: 50px;
+left: 750px;
+box-shadow: 3px 0px black inset;
+}
+
+.lightorangesources {
+width: 240px; 
+height: 245px; 
+background-color: white;
+border: 3px solid black;
+position: absolute; 
+top: 50px;
+left: 816px; 
+visibility: hidden;
+padding: 10px;
+text-align: justify;
+font-family: 'jgs7';
+font-size: 14px;
+}
+
+.yellowbutton {
+width: 50px;
+height: 50px;
+background-color: #fffeab;
+position: absolute;
+top: 250px;
+left: 50px;
+box-shadow: 3px 0px black inset;
+}
+
+.yellowsources {
+width: 240px; 
+height: 145px; 
+background-color: white;
+border: 3px solid black;
+position: absolute; 
+top: 250px;
+left: 116px; 
+visibility: hidden;
+padding: 10px;
+text-align: justify;
+font-family: 'jgs7';
+font-size: 14px;
+}
+
+.greenbutton {
+width: 50px;
+height: 50px;
+background-color:  #26de67;
+position: absolute;
+top: 250px;
+left: 400px;
+box-shadow: 3px 0px black inset;
+}
+
+.greensources {
+width: 240px; 
+height: 215px; 
+background-color: white;
+border: 3px solid black;
+position: absolute; 
+top: 250px;
+left: 466px; 
+visibility: hidden;
+padding: 10px;
+text-align: justify;
+font-family: 'jgs7';
+font-size: 14px;
+}
+
+.darkgreenbutton {
+width: 50px;
+height: 50px;
+background-color:  #005b11 ;
+position: absolute;
+top: 250px;
+left: 750px;
+box-shadow: 3px 0px black inset;
+}
+
+.darkgreensources {
+width: 240px; 
+height: 95px; 
+background-color: white;
+border: 3px solid black;
+position: absolute; 
+top: 250px;
+left: 816px; 
+visibility: hidden;
+padding: 10px;
+text-align: justify;
+font-family: 'jgs7';
+font-size: 14px;
+}
+
+.bluebutton {
+width: 50px;
+height: 50px;
+background-color:  #7ec4ef ;
+position: absolute;
+top: 450px;
+left: 50px;
+box-shadow: 3px 0px black inset;
+}
+
+.bluesources {
+width: 240px; 
+height: 15px; 
+background-color: white;
+border: 3px solid black;
+position: absolute; 
+top: 450px;
+left: 116px; 
+visibility: hidden;
+padding: 10px;
+text-align: justify;
+font-family: 'jgs7';
+font-size: 14px;
+}
+
+.indigobutton {
+width: 50px;
+height: 50px;
+background-color:  #241d75;
+position: absolute;
+top: 450px;
+left: 400px;
+box-shadow: 3px 0px black inset;
+}
+
+.indigosources {
+width: 240px; 
+height: 30px; 
+background-color: white;
+border: 3px solid black;
+position: absolute; 
+top: 450px;
+left: 466px; 
+visibility: hidden;
+padding: 10px;
+text-align: justify;
+font-family: 'jgs7';
+font-size: 14px;
+}
+
+.purplebutton {
+width: 50px;
+height: 50px;
+background-color: #a59dff;
+position: absolute;
+top: 450px;
+left: 750px;
+box-shadow: 3px 0px black inset;
+}
+
+.purplesources {
+width: 240px; 
+height: 15px; 
+background-color: white;
+border: 3px solid black;
+position: absolute; 
+top: 450px;
+left: 816px; 
+visibility: hidden;
+padding: 10px;
+text-align: justify;
+font-family: 'jgs7';
+font-size: 14px;
+}
+
+
+
+.nextbuttoncover {
+width: 60px;
+height: 455px;
+position: absolute;
+top: 50px;
+left: 1100px; 
+background-color: #bababa;
+visibility: visible;
+box-shadow: -4px 0px #bababa;
+font-family: 'AnalogueOS';
+font-size: 45px;
+text-align: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-content: center;
+color: white;
+z-index: 7;
+}
+
+.nextbutton {
+width: 60px;
+height: 455px;
+position: absolute;
+top: 50px;
+left: 1100px; 
+background-color: #da1c44;
+box-shadow: -4px 0px black;
+font-family: 'AnalogueOS';
+font-size: 45px;
+text-align: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-content: center;
+color: white;
+visibility: visible;
+z-index: 5;
+}
+
+.nextbutton:hover {
+background-color: black;
+cursor: pointer;    
+box-shadow: -4px 0px #da1c44;
+}
+
+@font-face {                  
+font-family: 'AnalogueOS';
+src: url(https://humantooth.neocities.org/fonts/AnalogueOS-Regular.woff) format('woff');
+font-weight: normal;
+font-style: normal;
+} 
+
+@font-face {                  
+font-family: 'jgs7';
+src: url(https://humantooth.neocities.org/fonts/jgs7.woff) format('woff');
+font-weight: normal;
+font-style: normal;
+} 

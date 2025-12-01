@@ -1,0 +1,259 @@
+body {
+    margin: 0;
+    box-sizing: border-box; 
+    text-align: center;
+    overflow: hidden;
+    align-items: center;
+    max-width: 100vw;
+    image-rendering: pixelated;
+}
+
+@font-face {                  
+font-family: 'AnalogueOS';
+src: url(https://humantooth.neocities.org/fonts/AnalogueOS-Regular.woff) format('woff');
+font-weight: normal;
+font-style: normal;
+} 
+
+@font-face {                  
+font-family: 'Gothamono';
+src: url(https://humantooth.neocities.org/fonts/Gothamonov0.2-Regular.woff) format('woff');
+font-weight: normal;
+font-style: normal;
+} 
+
+@font-face {                  
+font-family: 'jgs7';
+src: url(https://humantooth.neocities.org/fonts/jgs7.woff) format('woff');
+font-weight: normal;
+font-style: normal;
+} 
+
+.bodycontainer {
+width: 100vw; 
+height: 100vh;
+
+display: flex;
+justify-content: center;
+align-items: center;
+z-index: 0;
+position: absolute;
+top: 0;
+left: 0;
+}
+
+.headercontainer {
+width: 100px;
+height: 560px;
+padding: 10px;
+text-align: center;
+padding-bottom: 10px;
+padding-top: 30px;
+font-family: 'AnalogueOS';
+font-size: 60px;
+position: absolute;
+top: 10px;
+left: 15px; 
+border: 6px solid black;
+text-shadow: -5px 0px black;
+}
+
+.headercontainer2 {
+
+padding: 12px;
+text-align: center;
+margin: auto;
+z-index: 5;
+position: relative;
+
+}
+
+.header {
+font-family: 'AnalogueOS';
+font-size: 96px;
+color: #da1c44;
+transform: translateX(-5%);
+text-shadow: -5px 0px black;
+}
+
+.beta {
+    font-family: 'Gothamono';
+    font-size: 18px;
+}
+
+.textcontainer {
+width: 100vw;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+z-index: 0;
+position: absolute;
+top: 0;
+left: 0;
+
+
+}
+
+.text {
+width: 920px;
+height: 580px;
+display: flex;
+flex-wrap: wrap;
+gap: 0;
+row-gap: 0;
+padding: 0px 10px;
+justify-content: flex-start;
+align-content: flex-start;
+
+padding-top: 0;
+padding-right: 12px;
+font-family: 'jgs7';
+font-size: 18px;
+text-align: justify;
+border: 6px solid transparent;
+}
+
+.gamecontainer {
+width: 920px;
+height: 580px;
+display: flex;
+flex-wrap: wrap;
+gap: 0;
+row-gap: 0;
+justify-content: flex-start;
+align-content: flex-start;
+border: 6px solid black;
+position: relative;
+padding: 10px;
+}
+
+
+a{
+text-decoration: none;
+color: white;
+}
+
+
+.time {
+width: 100px;
+height: 100px;
+padding: 10px;
+padding-bottom: 0;
+padding-top: 40px;
+font-family: 'AnalogueOS';
+font-size: 60px;
+position: absolute;
+top: 10px;
+right: 15px; 
+border: 6px solid black;
+text-align: center;
+}
+
+.next {
+width: 100px;
+padding: 10px;
+padding-bottom: 40px;
+padding-top: 30px;
+font-family: 'AnalogueOS';
+font-size: 60px;
+position: absolute;
+top: 180px;
+right: 15px; 
+border: 6px solid black;
+text-align: center;
+background-color: #da1c44;
+color: white;
+text-shadow: -5px 0px black;
+z-index: 50;
+}
+
+.next:hover {
+background-color: black;
+cursor: pointer;    
+border: 6px solid #da1c44;
+}
+
+.cover1 {
+width: 102px; 
+height: 41px;
+background-color: #da1c44;
+margin: 0;
+}
+
+.cover2 {
+width: 102px; 
+height: 41px;
+background-color: #fa9202;
+margin: 0;
+}
+
+.cover3 {
+width: 102px; 
+height: 41px;
+background-color: #fffeab;
+margin: 0;
+}
+
+.cover4 {
+width: 102px; 
+height: 41px;
+background-color: #26de67;
+margin: 0;
+}
+
+.cover5 {
+width: 102px; 
+height: 41px;
+background-color: #7ec4ef;
+margin: 0;
+}
+
+.cover6 {
+width: 102px; 
+height: 41px;
+background-color: #241d75;
+margin: 0;
+}
+
+.cover7 {
+width: 102px; 
+height: 41px;
+background-color: #a59dff;
+margin: 0;
+}
+
+.gifcontainer {
+
+width: 100vw;
+text-align: center;
+z-index: 20;
+position: absolute;
+top: 0;
+left: 0;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+.gif {
+width: 100vw;
+visibility: hidden;
+}
+
+.failcontainer {
+width: 100vw;
+height: 100vh;
+background-color: black;
+position: absolute;
+top: 0;
+left: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+font-family: 'jgs7';
+font-size: 18px;
+color: white;
+visibility: hidden;
+}

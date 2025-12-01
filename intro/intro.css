@@ -1,0 +1,473 @@
+body {
+    margin: 0;
+    box-sizing: border-box; 
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(img/tvbackground.png);
+    background-size: 100%;
+    image-rendering: pixelated;
+}
+
+canvas {
+    width: 100vw;
+    height: 100vh;
+}
+
+.dialoguecontainer {
+
+width: 100vw;
+height: 100vh;
+}
+
+.dialogue {
+width: 600px;
+height: 300px;
+visibility: hidden; 
+background-color: white;
+position: absolute; 
+top: 4%;
+right: 25%;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 0;
+}
+
+@font-face {                  
+font-family: 'jgs7';
+src: url(https://humantooth.neocities.org/fonts/jgs7.woff) format('woff');
+font-weight: normal;
+font-style: normal;
+} 
+
+@font-face {                  
+font-family: 'AnalogueOS';
+src: url(https://humantooth.neocities.org/fonts/AnalogueOS-Regular.woff) format('woff');
+font-weight: normal;
+font-style: normal;
+} 
+
+@font-face {                  
+font-family: 'Gothamono';
+src: url(https://humantooth.neocities.org/fonts/Gothamonov0.2-Regular.woff) format('woff');
+font-weight: normal;
+font-style: normal;
+} 
+
+.header {
+background-color: #fffeab;
+width: 100%;
+height: 27px;
+border: 5px solid black;
+text-align: right;
+display: flex;
+align-items: center;
+justify-content: flex-end;
+padding-left: 40px;
+padding-top: 5px;
+padding-bottom: 4px;
+font-family: 'AnalogueOS'; 
+font-size: 38px;
+}
+
+.body {
+background-color: white;
+border: 5px solid black;
+border-top: none;
+width: 100%;
+height: 265px;
+font-family: "jgs7";
+font-size: 18px;
+padding: 20px;
+text-align: justify;
+}
+
+.bigray {
+width: 210px;
+height: 485px;
+background-image: url(../sprites/bigray1.png);
+background-size: 100%;
+position: absolute;
+bottom: 8.5%;
+right: 6.4%;
+}
+
+.dialogue2 {
+width: 600px;
+height: 300px;
+visibility: hidden; 
+background-color: white;
+position: absolute; 
+top: 15%;
+left: 15%;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 0;
+
+}
+
+.header2 {
+background-color: #26de67;
+width: 100%;
+height: 27px;
+border: 5px solid black;
+text-align: right;
+display: flex;
+align-items: center;
+justify-content: flex-end;
+padding-left: 40px;
+padding-top: 5px;
+padding-bottom: 4px;
+font-family: 'AnalogueOS'; 
+font-size: 38px;
+}
+
+.body2 {
+background-color: white;
+border: 5px solid black;
+border-top: none;
+width: 100%;
+height: 295px;
+font-family: "jgs7";
+font-size: 18px;
+padding: 20px;
+text-align: justify;
+}
+
+.dialogue3 {
+width: 600px;
+height: 350px;
+visibility: hidden; 
+background-color: white;
+position: absolute; 
+top: 28%;
+right: 30%;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 0;
+}
+
+.header3 {
+background-color: #005b11;
+width: 100%;
+height: 27px;
+border: 5px solid black;
+text-align: right;
+display: flex;
+align-items: center;
+justify-content: flex-end;
+color: white;
+padding-top: 5px;
+padding-bottom: 4px;
+font-family: 'AnalogueOS'; 
+font-size: 38px;
+padding-left: 40px;
+}
+
+.body3 {
+background-color: white;
+border: 5px solid black;
+border-top: none;
+width: 100%;
+height: 315px;
+font-family: "jgs7";
+font-size: 18px;
+padding: 20px;
+text-align: justify;
+}
+
+.dialogue4 {
+width: 600px;
+height: 530px;
+visibility: hidden;
+background-color: white;
+position: absolute; 
+top: 4%;
+left: 4%;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 0;
+}
+
+.header4 {
+background-color: #fffeab;
+width: 100%;
+height: 27px;
+border: 5px solid black;
+text-align: right;
+display: flex;
+align-items: center;
+justify-content: flex-end;
+padding-left: 40px;
+padding-top: 5px;
+padding-bottom: 4px;
+font-family: 'AnalogueOS'; 
+font-size: 38px;
+}
+
+.body4 {
+background-color: white;
+border: 5px solid black;
+border-top: none;
+width: 100%;
+height: 485px;
+font-family: "jgs7";
+font-size: 18px;
+padding: 20px;
+text-align: justify;
+}
+
+.dialogue5 {
+width: 40%;
+height: 200px;
+
+background-color: white;
+position: absolute; 
+top: 30%;
+left: 15%;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 0;
+}
+
+.header5 {
+background-color: #26de67;
+width: 100%;
+height: 27px;
+border: 5px solid black;
+text-align: right;
+display: flex;
+align-items: center;
+justify-content: flex-end;
+
+padding-top: 5px;
+padding-bottom: 4px;
+font-family: 'AnalogueOS'; 
+font-size: 38px;
+}
+
+.body5 {
+background-color: white;
+border: 5px solid black;
+border-top: none;
+width: 100%;
+height: 165px;
+}
+
+.dialogue6 {
+width: 40%;
+height: 200px;
+
+background-color: white;
+position: absolute; 
+top: 50%;
+right: 15%;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 0;
+}
+
+.header6 {
+background-color: #005b11;
+width: 100%;
+height: 27px;
+border: 5px solid black;
+text-align: right;
+display: flex;
+align-items: center;
+justify-content: flex-start;
+color: white;
+padding-top: 5px;
+padding-bottom: 4px;
+font-family: 'AnalogueOS'; 
+font-size: 38px;
+}
+
+.body6 {
+background-color: white;
+border: 5px solid black;
+border-top: none;
+width: 100%;
+height: 165px;
+}
+
+.dialogue7 {
+width: 40%;
+height: 200px;
+
+background-color: white;
+position: absolute; 
+top: 4%;
+right: 22%;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 0;
+}
+
+.header7 {
+background-color: #7ec4ef;
+width: 100%;
+height: 27px;
+border: 5px solid black;
+text-align: right;
+display: flex;
+align-items: center;
+justify-content: flex-end;
+
+padding-top: 5px;
+padding-bottom: 4px;
+font-family: 'AnalogueOS'; 
+font-size: 38px;
+}
+
+.body7 {
+background-color: white;
+border: 5px solid black;
+border-top: none;
+width: 100%;
+height: 165px;
+}
+
+.dialogue8 {
+width: 40%;
+height: 200px;
+
+background-color: white;
+position: absolute; 
+top: 30%;
+left: 15%;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 0;
+}
+
+.header8 {
+background-color: #241d75;
+width: 100%;
+height: 27px;
+border: 5px solid black;
+text-align: right;
+display: flex;
+align-items: center;
+justify-content: flex-end;
+color: white;
+padding-top: 5px;
+padding-bottom: 4px;
+font-family: 'AnalogueOS'; 
+font-size: 38px;
+}
+
+.body8 {
+background-color: white;
+border: 5px solid black;
+border-top: none;
+width: 100%;
+height: 165px;
+}
+
+.dialogue9 {
+width: 40%;
+height: 200px;
+
+background-color: white;
+position: absolute; 
+top: 50%;
+right: 15%;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 0;
+}
+
+.header9 {
+background-color: #a59dff;
+width: 100%;
+height: 27px;
+border: 5px solid black;
+text-align: right;
+display: flex;
+align-items: center;
+justify-content: flex-start;
+
+padding-top: 5px;
+padding-bottom: 4px;
+font-family: 'AnalogueOS'; 
+font-size: 38px;
+}
+
+.body9 {
+background-color: white;
+border: 5px solid black;
+border-top: none;
+width: 100%;
+height: 165px;
+}
+
+.button1 {
+background-color: transparent;
+border: none;
+font-family: "AnalogueOS"; 
+font-size: 38px;
+padding: 0px;
+cursor: pointer;
+}
+
+.button2 {
+background-color: transparent;
+border: none;
+font-family: "AnalogueOS"; 
+font-size: 38px;
+padding: 0px;
+cursor: pointer;
+}
+
+.button3 {
+background-color: transparent;
+border: none;
+font-family: "AnalogueOS"; 
+font-size: 38px;
+padding: 0px;
+cursor: pointer;
+color: white;
+}
+
+.button4 {
+background-color: transparent;
+border: none;
+font-family: "AnalogueOS"; 
+font-size: 38px;
+padding: 0px;
+cursor: pointer;
+}
+
+.next {
+
+font-family: "AnalogueOS";
+font-size: 32px;
+color: black;
+background-color: #da1c44;
+padding: 10px 20px;
+text-align: center;
+position: absolute;
+top: 40px;
+left: 60px;
+width: 100px;
+border: 5px solid black;
+}
+
+.next:hover {
+background-color: black;
+cursor: pointer;    
+border: 5px solid #da1c44;
+color: white;
+
+}

@@ -1,0 +1,271 @@
+body {
+    margin: 0;
+    box-sizing: border-box; 
+    text-align: center;
+    overflow: hidden;
+    align-items: center;
+    max-width: 100vw;
+    image-rendering: pixelated;
+    background-color:  #241d75;
+}
+
+canvas {
+    width: 1200px;
+    height: 560px;
+    background-color: black;
+    background-image: url(img/gamebg.png);
+}
+
+@font-face {                  
+font-family: 'AnalogueOS';
+src: url(https://humantooth.neocities.org/fonts/AnalogueOS-Regular.woff) format('woff');
+font-weight: normal;
+font-style: normal;
+} 
+
+@font-face {                  
+font-family: 'Gothamono';
+src: url(https://humantooth.neocities.org/fonts/Gothamonov0.2-Regular.woff) format('woff');
+font-weight: normal;
+font-style: normal;
+} 
+
+@font-face {                  
+font-family: 'jgs7';
+src: url(https://humantooth.neocities.org/fonts/jgs7.woff) format('woff');
+font-weight: normal;
+font-style: normal;
+} 
+
+.bodycontainer {
+width: 100vw; 
+height: 100vh;
+
+display: flex;
+justify-content: center;
+align-items: center;
+z-index: 0;
+position: absolute;
+top: 0;
+left: 0;
+}
+
+.headercontainer {
+
+padding: 12px;
+text-align: center;
+margin: auto;
+z-index: 5;
+position: absolute;
+top: 0;
+left: 30.6%;
+}
+
+.headercontainer2 {
+
+padding: 12px;
+text-align: center;
+margin: auto;
+z-index: 5;
+position: relative;
+
+}
+
+.header {
+font-family: 'AnalogueOS';
+font-size: 96px;
+color: #da1c44;
+transform: translateX(-5%);
+text-shadow: -5px 0px black;
+}
+
+.beta {
+    font-family: 'Gothamono';
+    font-size: 18px;
+}
+
+.menucontainer {
+width: 940px;
+height: 580px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+border: 6px solid black;
+position: relative;
+}
+
+.menu {
+padding: 7px 5px;
+font-family: 'AnalogueOS';
+font-size: 32px;
+color: white; 
+background-color: #da1c44;
+width: 50%;
+/**/
+box-shadow: 4px 0px black inset;
+}
+
+a{
+text-decoration: none;
+color: white;
+}
+
+.text1 {
+border: 4px solid #f44200;
+background-color: #fa9202;
+width: 354px;
+height: 114px;
+position: absolute; 
+top: 50px;
+left: 300px;
+visibility: hidden;
+font-family: 'jgs7';
+padding: 10px;
+font-size: 14px;
+text-align: justify;
+}
+
+.text2 {
+border: 4px solid #f44200;
+background-color: #fa9202;
+width: 450px;
+height: 114px;
+position: absolute; 
+top: 50px;
+left: 746px;
+box-shadow: 3px 3px black;
+visibility: hidden;
+font-family: 'jgs7';
+padding: 10px;
+font-size: 14px;
+text-align: justify;
+}
+
+.text3 {
+border: 4px solid #f44200;
+background-color: #fa9202;
+width: 294px;
+height: 176px;
+position: absolute; 
+top: 120px;
+left: 904px;
+box-shadow: -3px -3px black;
+visibility: hidden;
+font-family: 'jgs7';
+padding: 10px;
+font-size: 14px;
+text-align: justify;
+}
+
+.text4 {
+border: 4px solid #f44200;
+background-color: #fa9202;
+width: 444px;
+height: 96px;
+position: absolute; 
+top: 194px;
+left: 54px;
+box-shadow: -3px 3px black;
+visibility: hidden;
+font-family: 'jgs7';
+padding: 10px;
+font-size: 14px;
+text-align: justify;
+}
+
+.text5 {
+border: 4px solid #f44200;
+background-color: #fa9202;
+width: 374px;
+height: 180px;
+position: absolute; 
+top: 194px;
+left: 586px;
+box-shadow: -3px 3px black;
+visibility: hidden;
+font-family: 'jgs7';
+padding: 10px;
+font-size: 14px;
+text-align: justify;
+}
+
+.text6 {
+border: 4px solid #f44200;
+background-color: #fa9202;
+width: 404px;
+height: 144px;
+position: absolute; 
+top: 268px;
+left: 200px;
+box-shadow: -3px -3px black;
+visibility: hidden;
+font-family: 'jgs7';
+padding: 10px;
+font-size: 14px;
+text-align: justify;
+}
+
+.text7 {
+border: 4px solid #f44200;
+background-color: #fa9202;
+width: 332px;
+height: 130px;
+position: absolute; 
+top: 340px;
+left: 366px;
+box-shadow: -3px -3px black;
+visibility: hidden;
+font-family: 'jgs7';
+padding: 10px;
+font-size: 14px;
+text-align: justify;
+}
+
+.text8 {
+border: 4px solid #f44200;
+background-color: #fa9202;
+width: 410px;
+height: 130px;
+position: absolute; 
+top: 340px;
+left: 784px;
+box-shadow: 3px 3px black;
+visibility: hidden;
+font-family: 'jgs7';
+padding: 10px;
+font-size: 14px;
+text-align: justify;
+}
+
+.text9 {
+border: 4px solid #f44200;
+background-color: #fa9202;
+width: 432px;
+height: 100px;
+position: absolute; 
+top: 414px;
+left: 500px;
+box-shadow: 3px 3px black;
+visibility: hidden;
+font-family: 'jgs7';
+padding: 10px;
+font-size: 14px;
+text-align: justify;
+}
+
+.text10 {
+border: 4px solid #f44200;
+background-color: #fa9202;
+width: 582px;
+height: 80px;
+position: absolute; 
+top: 480px;
+left: 548px;
+box-shadow: 3px 3px black;
+visibility: hidden;
+font-family: 'jgs7';
+padding: 10px;
+font-size: 14px;
+text-align: justify;
+}
